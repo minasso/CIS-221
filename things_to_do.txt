@@ -1,0 +1,17 @@
+refactor functions to take input variables as shown in diagram 
+
+sort lists alphabetically by name
+
+create all error messages
+
+allow for recursive call of the menu (done)
+
+refactor read_employees function to read all lines into a single list, then alphabetize that list. (then split by tabs to populate individual lists?)
+
+
+    (r)ead employee data (done)
+    (p)rint employee payroll
+    (d)isplay an employee by name (done)
+    find (h)ighest paid employee
+    find (l)owest paid employee
+    (q)uit (done)
