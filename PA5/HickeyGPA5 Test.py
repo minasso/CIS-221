@@ -64,7 +64,7 @@ def printPayroll():
         print('\nName\tHours\tPay')
         print('-----\t-----\t-----')
         
-# compute the pay for each employee and print the report
+# comput the pay for each employee and print the report
 
 pay = hoursWorked[i]*wages[i]
 print names[i],"\t",hoursWorked[i],"\t$",pay
