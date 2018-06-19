@@ -1,6 +1,6 @@
 			Loan Document for jd			
 			----------------------------
-Loan Amount: $  1.00	Interest rate: 1%	Nbr Years: 1
-Monthly Payment: $  0.08	Total Payment: $  0.96
+Loan Amount: $33333.00	Interest rate: 3%	Nbr Years: 3
+Monthly Payment: $969.36	Total Payment: $34896.96
 
 Amortization Schedule
