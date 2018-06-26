@@ -111,7 +111,7 @@ class LoanCalculator:
         locale.setlocale( locale.LC_ALL, '' )
         balance = float(self.loanAmountVar.get())
         # Use string formatting to match the width of the 80 character text box widget
-        output_str = '{:<20s}{:<20s}{:<20s}{:<20s}'.format("Payment #","Interest","Principal Pmt","Remaining Prin")
+        output_str = '{:<20s}{:<20s}{:<20s}{:<20s}\n'.format("Payment #","Interest","Principal Pmt","Remaining Prin")
         self.text.insert(END,output_str)
         # Calculate each line of the amortization schedule
         for i in range(1, int(self.numberOfYearsVar.get()) * 12 + 1):
@@ -119,7 +119,7 @@ class LoanCalculator:
             principal = float(self.monthlyPaymentVar.get()) - interest
             balance = balance - principal
             # Write each line of amortization schedule to the text box widget
-            self.text.insert(END,'{:<20d}{:<20s}{:<20s}{:<20s}'.format(i,locale.currency(interest,grouping=True),
+            self.text.insert(END,'{:<20d}{:<20s}{:<20s}{:<20s}\n'.format(i,locale.currency(interest,grouping=True),
             locale.currency(principal,grouping=True),locale.currency(balance,grouping=True)))        
 
 LoanCalculator()  
